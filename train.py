@@ -9,6 +9,7 @@ from collections import OrderedDict
 from pprint import pprint
 
 import gym
+import gym_ransim
 import numpy as np
 import seaborn
 import torch as th

@@ -1,3 +1,22 @@
+#Best trial:
+#Value:  -77.33145141601562
+#Params:
+ransim-v0:
+  n_envs: 4
+  n_timesteps: 40000 #80000
+  gamma: 0.995
+  normalize_advantage: true #False
+  max_grad_norm: 0.3
+  use_rms_prop: False
+  gae_lambda: 0.8
+  n_steps: 20
+  learning_rate:  lin_0.0096 #lin_0.5141121815880177
+  ent_coef: 0.055709336801979537
+  vf_coef: 0.7408390311437715
+  policy: 'MlpPolicy'
+  policy_kwargs: "dict(log_std_init= -2.61506732878785, ortho_init= True, net_arch= [dict(pi=[256, 256], vf=[256, 256])], sde_net_arch= None, full_std= True, activation_fn=nn.Tanh)"
+#Writing report to logs/a2c/report_ransim-v0_10-trials-400-tpe-median_1598349770.csv
+
 atari:
   env_wrapper:
     - stable_baselines3.common.atari_wrappers.AtariWrapper
